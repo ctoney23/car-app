@@ -1,1 +1,3 @@
-<p>Hello World </p>
+<p>Hello {{ $name }} </p>
+
+<p>{{ $sum }}</p>

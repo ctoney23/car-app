@@ -7,37 +7,23 @@ use Illuminate\View\View;
  
 class HomeController extends Controller
 {
-    public function index()
+    public function index(): View
     {
-        $word = "Hello World"; // string 
-        $float = 1.3; // float
-        $statement = true; // boolean
-        $array = [1, 2, 3]; // array
-
-        
-        $number = 1; // integer
-        $number2 = 2; // integer
-
-
-        dump($word);
-        dump($number);
-        dump($float);
-        dump($statement);
-        dump($array);
-        dump($number + $number2);
+        $firstname = "John";
+        echo "Hello, $firstname!";
+        echo 'Hello,' . $firstname;
+       
 
 
 
+        // MVC design pattern MODEL, VIEW, CONTROLLER
+        // CONTROLLER = HomeController only for your php logic
+        // VIEW = welcome.blade.php always work with html in the view
 
-
-
-
-
-
-
-
-
-        
-
+        $name = "John Doe";
+        $sum = 1 + 2;
+        return view('welcome')
+            ->with('sum', $sum)
+            ->with('name', $name);
     }
 }
