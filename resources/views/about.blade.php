@@ -6,7 +6,7 @@
     <title>About Us</title>
 </head>
 <body>
-    <h1>About Us</h1>
+    <h1 style="color: #ff00ff;">About Us</h1>
     <p>Welcome to the About page of our Cars website.</p>
 </body>
 </html>
